@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi", "PosRi\PosRi.csproj", "{415C8828-FD04-4F34-AFB6-B31B681346A6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi.DataAccess", "PosRi.DataAccess\PosRi.DataAccess.csproj", "{F03D99DA-75E4-4134-B42E-ECE6BB223D2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi", "PosRi\PosRi.csproj", "{596A43A3-600E-4921-961E-D9C7616FF486}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{415C8828-FD04-4F34-AFB6-B31B681346A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{415C8828-FD04-4F34-AFB6-B31B681346A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{415C8828-FD04-4F34-AFB6-B31B681346A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{415C8828-FD04-4F34-AFB6-B31B681346A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F03D99DA-75E4-4134-B42E-ECE6BB223D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F03D99DA-75E4-4134-B42E-ECE6BB223D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03D99DA-75E4-4134-B42E-ECE6BB223D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F03D99DA-75E4-4134-B42E-ECE6BB223D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596A43A3-600E-4921-961E-D9C7616FF486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596A43A3-600E-4921-961E-D9C7616FF486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596A43A3-600E-4921-961E-D9C7616FF486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596A43A3-600E-4921-961E-D9C7616FF486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

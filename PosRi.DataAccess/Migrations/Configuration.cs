@@ -1,18 +1,15 @@
 namespace PosRi.DataAccess.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PosRi.DataAccess.Context.PosRiContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Context.PosRiContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PosRi.DataAccess.Context.PosRiContext context)
+        protected override void Seed(Context.PosRiContext context)
         {
            
 
