@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PosRi.DataAccess.Model
 {
@@ -30,5 +27,7 @@ namespace PosRi.DataAccess.Model
         public bool IsActive { get; set; }
 
         public virtual ICollection<Role> Roles { get; set; }
+
+        
     }
 }

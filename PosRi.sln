@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi.DataAccess", "PosRi.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi", "PosRi\PosRi.csproj", "{596A43A3-600E-4921-961E-D9C7616FF486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosRi.BusinessLogic", "PosRi.BusinessLogic\PosRi.BusinessLogic.csproj", "{4CBA3424-10E2-4D9D-9C00-2E18AD4FA733}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{596A43A3-600E-4921-961E-D9C7616FF486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596A43A3-600E-4921-961E-D9C7616FF486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596A43A3-600E-4921-961E-D9C7616FF486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CBA3424-10E2-4D9D-9C00-2E18AD4FA733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CBA3424-10E2-4D9D-9C00-2E18AD4FA733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CBA3424-10E2-4D9D-9C00-2E18AD4FA733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CBA3424-10E2-4D9D-9C00-2E18AD4FA733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
