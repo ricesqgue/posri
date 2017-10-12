@@ -1,4 +1,5 @@
 using PosRi.DataAccess.Model;
+using PosRi.DataAccess.Seeder;
 using PosRi.DataAccess.Utils;
 
 namespace PosRi.DataAccess.Migrations
@@ -15,6 +16,8 @@ namespace PosRi.DataAccess.Migrations
         protected override void Seed(Context.PosRiContext context)
         {
             context.Roles.SeedEnumValues<Role, RoleNames>(@enum =>@enum);
+            MexicanStatesSeeder.Seed(context);
+
             context.SaveChanges();
         }
     }
