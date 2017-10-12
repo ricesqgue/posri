@@ -27,7 +27,6 @@ namespace PosRi.BusinessLogic.Managers
             }
         }
 
-
         public bool IsValid(MethodTypes httpMethod, BrandDto brandDto, out string message)
         {
             message = "";

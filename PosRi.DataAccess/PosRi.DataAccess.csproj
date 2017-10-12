@@ -72,6 +72,10 @@
     <Compile Include="Migrations\201710110232116_RoleNames.Designer.cs">
       <DependentUpon>201710110232116_RoleNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710120143589_CahsRegisterRelationStore.cs" />
+    <Compile Include="Migrations\201710120143589_CahsRegisterRelationStore.Designer.cs">
+      <DependentUpon>201710120143589_CahsRegisterRelationStore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Brand.cs" />
     <Compile Include="Model\CashFound.cs" />
@@ -114,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710110232116_RoleNames.resx">
       <DependentUpon>201710110232116_RoleNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710120143589_CahsRegisterRelationStore.resx">
+      <DependentUpon>201710120143589_CahsRegisterRelationStore.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

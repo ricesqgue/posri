@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using PosRi.BusinessLogic.Dtos;
+﻿using PosRi.BusinessLogic.Dtos;
 using PosRi.BusinessLogic.Managers;
 using PosRi.BusinessLogic.Utils;
+using System.Web.Http;
 
 namespace PosRi.Controllers
 {
+    [RoutePrefix("api/brand")]
     public class BrandController : ApiController
     {
         [HttpGet]
