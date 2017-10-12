@@ -40,7 +40,7 @@ namespace PosRi.BusinessLogic.Managers
                                                      u.Name.Equals(userDto.Name,
                                                          StringComparison.CurrentCultureIgnoreCase)))
                         {
-                            message = "Ya existe usuario de nombre " + userDto.Name;
+                            message = $"Ya existe usuario de nombre {userDto.Name}.";
                             return false;
                         }                        
                     }
@@ -54,7 +54,7 @@ namespace PosRi.BusinessLogic.Managers
                         var user = dbContext.Users.Find(userDto.Id);
                         if (user == null)
                         {
-                            message = "Usuario no encontrado";
+                            message = "Usuario no encontrado.";
                             return false;
                         }
 
@@ -62,7 +62,7 @@ namespace PosRi.BusinessLogic.Managers
                                                      u.Name.Equals(userDto.Name,
                                                          StringComparison.CurrentCultureIgnoreCase)))
                         {
-                            message = "Ya existe usuario de nombre " + userDto.Name;
+                            message = $"Ya existe usuario de nombre {userDto.Name}.";
                             return false;
                         }
                     }
@@ -126,7 +126,7 @@ namespace PosRi.BusinessLogic.Managers
 
                     if (user == null)
                     {
-                        message = "Usuario no encontrado";
+                        message = "Usuario no encontrado.";
                         return null;
                     }
 
@@ -153,7 +153,7 @@ namespace PosRi.BusinessLogic.Managers
                         return userDto;
                     }
 
-                    message = "No se pudo actualizar el usuario";
+                    message = "No se pudo actualizar el usuario.";
                     return null;
 
                 }
@@ -177,7 +177,7 @@ namespace PosRi.BusinessLogic.Managers
 
                     if (user == null)
                     {
-                        message = "Usuario no encontrado";
+                        message = "Usuario no encontrado.";
                         return false;
                     }
 
@@ -192,7 +192,7 @@ namespace PosRi.BusinessLogic.Managers
                         return true;
                     }
 
-                    message = "No se pudo eliminar el usario";
+                    message = "No se pudo eliminar el usario.";
                     return false;
                 }
             }
