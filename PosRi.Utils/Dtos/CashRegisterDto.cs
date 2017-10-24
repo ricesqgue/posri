@@ -1,7 +1,7 @@
 ﻿using PosRi.DataAccess.Model;
 using System.ComponentModel.DataAnnotations;
 
-namespace PosRi.BusinessLogic.Dtos
+namespace PosRi.Utils.Dtos
 {
     public class CashRegisterDto
     {
@@ -9,6 +9,8 @@ namespace PosRi.BusinessLogic.Dtos
 
         [Required]
         public string Name { get; set; }
+
+        public StoreDto Store { get; set; }
 
         public CashRegisterDto()
         {

@@ -1,6 +1,6 @@
-﻿using PosRi.BusinessLogic.Dtos;
-using PosRi.BusinessLogic.Managers;
-using PosRi.BusinessLogic.Utils;
+﻿using PosRi.BusinessLogic.Managers;
+using PosRi.Utils.Dtos;
+using PosRi.Utils.Utils;
 using System.Web.Http;
 
 namespace PosRi.Controllers

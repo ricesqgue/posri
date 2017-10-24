@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace PosRi.BusinessLogic.Dtos
+namespace PosRi.Utils.Dtos
 {
     public class UserDto
     {

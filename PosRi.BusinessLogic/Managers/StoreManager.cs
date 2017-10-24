@@ -1,7 +1,8 @@
-﻿using PosRi.BusinessLogic.Dtos;
-using PosRi.BusinessLogic.Utils;
+﻿
 using PosRi.DataAccess.Context;
 using PosRi.DataAccess.Model;
+using PosRi.Utils.Dtos;
+using PosRi.Utils.Utils;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

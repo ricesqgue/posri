@@ -1,4 +1,4 @@
-﻿namespace PosRi.BusinessLogic.Utils
+﻿namespace PosRi.Utils.Utils
 {
 
     public enum MethodTypes

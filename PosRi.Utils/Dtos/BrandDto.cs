@@ -1,7 +1,7 @@
 ﻿using PosRi.DataAccess.Model;
 using System.ComponentModel.DataAnnotations;
 
-namespace PosRi.BusinessLogic.Dtos
+namespace PosRi.Utils.Dtos
 {
     public class BrandDto
     {
