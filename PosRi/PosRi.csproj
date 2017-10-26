@@ -90,10 +90,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\components\home\homeController.js" />
+    <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\components\navbar\navbarController.js" />
+    <Content Include="app\components\navbar\navbarView.html" />
+    <Content Include="assets\css\angular-block-ui.css" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\awesomeSideBar.css">
+      <DependentUpon>awesomeSideBar.less</DependentUpon>
+    </Content>
+    <Content Include="assets\css\awesomeSideBar.min.css">
+      <DependentUpon>awesomeSideBar.css</DependentUpon>
+    </Content>
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\icomoon.css" />
+    <Content Include="assets\css\posri.css" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\icomoon.svg" />
+    <Content Include="assets\js\angular-block-ui.js" />
+    <Content Include="assets\js\angular-ui-router.min.js" />
     <Content Include="assets\js\angular.min.js" />
+    <Content Include="assets\js\angularjs-dropdown-multiselect.min.js" />
     <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\dirPagination.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\css\toastr.min.css" />
     <Content Include="assets\js\toastr.min.js" />
@@ -121,6 +141,14 @@
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\fonts\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon.woff" />
+    <Content Include="assets\css\awesomeSideBar.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,6 +157,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\shared\" />
     <Folder Include="App_Data\" />
     <Folder Include="assets\img\" />
   </ItemGroup>

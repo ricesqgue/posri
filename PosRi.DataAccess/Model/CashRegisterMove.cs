@@ -15,10 +15,10 @@ namespace PosRi.DataAccess.Model
 
         public int CashRegisterId { get; set; }
         [ForeignKey("CashRegisterId")]
-        public virtual CashRegister CashRegister { get; set; }
+        public CashRegister CashRegister { get; set; }
 
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public virtual User User { get; set; }
+        public User User { get; set; }
     }
 }

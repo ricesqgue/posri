@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PosRi.DataAccess.Model
 {
@@ -27,15 +24,17 @@ namespace PosRi.DataAccess.Model
 
         public int CustomerId { get; set; }
         [ForeignKey("CustomerId")]
-        public virtual Customer Customer { get; set; }
+        public Customer Customer { get; set; }
 
         public int CashRegisterId { get; set; }
         [ForeignKey("CashRegisterId")]
-        public virtual CashRegister CashRegister { get; set; }
+        public CashRegister CashRegister { get; set; }
 
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public virtual User User { get; set; }
+        public User User { get; set; }
+
+        public ICollection<SaleDetail> SaleDetails { get; set; }
 
     }
 }

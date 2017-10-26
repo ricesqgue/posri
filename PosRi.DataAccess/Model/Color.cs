@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace PosRi.DataAccess.Model
 {
     public class Color
@@ -7,5 +9,7 @@ namespace PosRi.DataAccess.Model
         public string Name { get; set; }
 
         public bool IsActive { get; set; }
+
+        public ICollection<Product> Products { get; set; }
     }
 }

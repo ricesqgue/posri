@@ -1,4 +1,6 @@
-﻿namespace PosRi.DataAccess.Model
+﻿using System.Collections.Generic;
+
+namespace PosRi.DataAccess.Model
 {
     public class Size
     {
@@ -7,5 +9,8 @@
         public string Name { get; set; }
 
         public bool IsActive { get; set; }
+
+        public ICollection<Product> Products { get; set; }
+
     }
 }

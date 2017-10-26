@@ -99,7 +99,7 @@ namespace PosRi.BusinessLogic.Managers
                         Email = vendorDto.Email,
                         Rfc = vendorDto.Email,
                         IsActive = true,
-                        StateId = vendorDto.StateId,
+                        StateId = vendorDto.State.Id,
                         Brands = brands
                     };
 
@@ -152,7 +152,7 @@ namespace PosRi.BusinessLogic.Managers
                     vendor.Email = vendorDto.Email;
                     vendor.Phone = vendorDto.Phone;
                     vendor.Rfc = vendorDto.Rfc;
-                    vendor.StateId = vendorDto.StateId;
+                    vendor.StateId = vendorDto.State.Id;
                     vendor.Brands = brands;
 
                     dbContext.Entry(vendor).State = EntityState.Modified;

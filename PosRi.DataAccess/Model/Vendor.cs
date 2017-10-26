@@ -26,9 +26,13 @@ namespace PosRi.DataAccess.Model
 
         public int StateId { get; set; }
         [ForeignKey("StateId")]
-        public virtual State State { get; set; }
+        public State State { get; set; }
 
-        public virtual ICollection<Brand> Brands { get; set; }
+        public ICollection<Brand> Brands { get; set; }
+
+        public ICollection<PurchaseHeader> PurchaseHeaders { get; set; }
+
+        public ICollection<VendorDebt> VendorDebts { get; set; }
 
 
     }

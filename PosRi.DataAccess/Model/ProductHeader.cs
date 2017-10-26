@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PosRi.DataAccess.Model
 {
@@ -17,11 +13,14 @@ namespace PosRi.DataAccess.Model
 
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
-        public virtual Category Category { get; set; }
+        public Category Category { get; set; }
 
         public int BrandId { get; set; }
         [ForeignKey("BrandId")]
-        public virtual Brand Brand { get; set; }
+        public Brand Brand { get; set; }
+
+        public ICollection<Product> Products { get; set; }
+
 
     }
 }

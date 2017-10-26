@@ -94,7 +94,7 @@ namespace PosRi.BusinessLogic.Managers
                         Email = customerDto.Email,
                         Rfc = customerDto.Email,
                         IsActive = true,
-                        StateId = customerDto.StateId
+                        StateId = customerDto.State.Id
                     };
 
                     dbContext.Entry(customer).State = EntityState.Added;
@@ -140,7 +140,7 @@ namespace PosRi.BusinessLogic.Managers
                     customer.Email = customerDto.Email;
                     customer.Phone = customerDto.Phone;
                     customer.Rfc = customerDto.Rfc;
-                    customer.StateId = customerDto.StateId;
+                    customer.StateId = customerDto.State.Id;
 
                     dbContext.Entry(customer).State = EntityState.Modified;
 

@@ -12,10 +12,10 @@ namespace PosRi.DataAccess.Model
 
         public int ProductId { get; set; }
         [ForeignKey("ProductId")]
-        public virtual Product Product { get; set; }
+        public Product Product { get; set; }
 
         public int SaleHeaderId { get; set; }
         [ForeignKey("SaleHeaderId")]
-        public virtual SaleHeader SaleHeader { get; set; }
+        public SaleHeader SaleHeader { get; set; }
     }
 }

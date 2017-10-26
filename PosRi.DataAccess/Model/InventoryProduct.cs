@@ -13,11 +13,11 @@ namespace PosRi.DataAccess.Model
 
         public int ProductId { get; set; }
         [ForeignKey("ProductId")]
-        public virtual Product Product { get; set; }
+        public Product Product { get; set; }
 
         public int StoreId { get; set; }
         [ForeignKey("StoreId")]
-        public virtual Store Store { get; set; }
+        public Store Store { get; set; }
 
     }
 }

@@ -1,0 +1,21 @@
+﻿.pointer{
+    cursor: pointer;
+}
+
+.multiselect-parent{
+    width: 100%;
+}
+
+.multiselect-parent .dropdown-menu{
+    width: 100%;
+}
+
+.multiselect-parent button.dropdown-toggle {
+    width: 100%; 
+}
+
+.navbar {
+    -ms-border-radius: 0;
+    border-radius: 0;
+    min-height: 80px;
+}

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "assets/css/StyleSheet1.css",
+    "inputFile": "assets/css/StyleSheet1.scss"
+  },
+  {
+    "outputFile": "assets/css/awesomeSideBar.css",
+    "inputFile": "assets/css/awesomeSideBar.scss"
+  },
+  {
+    "outputFile": "assets/css/awesomeSideBar.css",
+    "inputFile": "assets/css/awesomeSideBar.less"
+  }
+]

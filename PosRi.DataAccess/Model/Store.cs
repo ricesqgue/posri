@@ -14,7 +14,7 @@ namespace PosRi.DataAccess.Model
 
         public bool IsActive { get; set; }
 
-        public virtual ICollection<CashRegister> CashRegisters { get; set;  }
+        public ICollection<CashRegister> CashRegisters { get; set; }
 
     }
 }

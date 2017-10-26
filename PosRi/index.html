@@ -1,11 +1,93 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="es" ng-app="PosRiApplication">
 <head>
-	<title>PosRi</title>
-	<meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POSRi</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+    <link rel="stylesheet" href="assets/css/angular-block-ui.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/awesomeSideBar.min.css">
+    <link rel="stylesheet" href="assets/css/posri.css">
 
 </head>
 <body>
-	INDEX :) 
+    <div id="wrapper">
+        <navbar></navbar>
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+        <div id="page-content-wrapper" data-toggle="offcanvasbody">
+            <div ui-view ></div>
+        </div>
+    </div>
+
+	
+
+
+	<!--Angular-->
+	<script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script>
+	<script src="assets/js/angular-block-ui.js"></script>
+	<script src="assets/js/angularjs-dropdown-multiselect.min.js"></script>
+
+    <!--Libs-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--Application-->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/navbar/navbarController.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function () {
+            hamburger_cross();      
+            });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+        $('[data-toggle="offcanvasbody"]').unbind('click');  
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+
+        $('[data-toggle="offcanvasbody"]').click(offcanvasbody);  
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+
+ 
+
+  function offcanvasbody () {
+        $('#wrapper').removeClass('toggled');
+        hamburger_cross();
+  }
+});
+    </script>
 </body>
 </html>

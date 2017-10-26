@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PosRi.DataAccess.Model
 {
@@ -29,7 +26,11 @@ namespace PosRi.DataAccess.Model
 
         public int StateId { get; set; }
         [ForeignKey("StateId")]
-        public virtual State State { get; set; }
+        public State State { get; set; }
+
+        public ICollection<SaleHeader> SaleHeaders { get; set; }
+
+        public ICollection<CustomerDebt> CustomerDebts { get; set; }
 
     }
 }

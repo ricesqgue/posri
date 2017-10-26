@@ -26,8 +26,20 @@ namespace PosRi.DataAccess.Model
         [Required]
         public bool IsActive { get; set; }
 
-        public virtual ICollection<Role> Roles { get; set; }
+        public ICollection<Role> Roles { get; set; }
 
-        
+        public ICollection<PurchaseHeader> PurchaseHeaders { get; set; }
+
+        public ICollection<SaleHeader> SaleHeaders { get; set; }
+
+        public ICollection<CashRegisterMove> CashRegisterMoves { get; set; }
+
+        public ICollection<CashFound> CashFounds { get; set; }
+
+        public ICollection<CustomerPayment> CustomerPayments { get; set; }
+
+        public ICollection<VendorPayment> VendorPayments { get; set; }
+
+
     }
 }

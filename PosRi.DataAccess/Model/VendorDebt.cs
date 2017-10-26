@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PosRi.DataAccess.Model
@@ -17,6 +18,12 @@ namespace PosRi.DataAccess.Model
 
         public int PurchaseHeaderId { get; set; }
         [ForeignKey("PurchaseHeaderId")]
-        public virtual PurchaseHeader PurchaseHeader { get; set; }
+        public PurchaseHeader PurchaseHeader { get; set; }
+
+        public int VendorId { get; set; }
+        [ForeignKey("VendorId")]
+        public Vendor Vendor { get; set; }
+
+        public ICollection<VendorPayment> VendorPayments { get; set; }
     }
 }

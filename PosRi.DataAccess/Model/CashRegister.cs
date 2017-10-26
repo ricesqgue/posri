@@ -12,7 +12,7 @@ namespace PosRi.DataAccess.Model
 
         public int StoreId { get; set; }
         [ForeignKey("StoreId")]
-        public virtual Store Store { get; set; }
+        public Store Store { get; set; }
 
     }
 

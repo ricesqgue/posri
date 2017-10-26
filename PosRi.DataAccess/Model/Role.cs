@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PosRi.DataAccess.Model
 {
@@ -8,6 +9,8 @@ namespace PosRi.DataAccess.Model
 
         [Required]
         public string Name { get; set; }
+
+        public ICollection<User> Users { get; set; }
 
         public Role()
         {

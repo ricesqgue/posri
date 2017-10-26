@@ -51,6 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,21 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\PosRiContext.cs" />
-    <Compile Include="Migrations\201709210040218_init.cs" />
-    <Compile Include="Migrations\201709210040218_init.Designer.cs">
-      <DependentUpon>201709210040218_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201709210207026_FirstDataBase.cs" />
-    <Compile Include="Migrations\201709210207026_FirstDataBase.Designer.cs">
-      <DependentUpon>201709210207026_FirstDataBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710110232116_RoleNames.cs" />
-    <Compile Include="Migrations\201710110232116_RoleNames.Designer.cs">
-      <DependentUpon>201710110232116_RoleNames.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710120143589_CahsRegisterRelationStore.cs" />
-    <Compile Include="Migrations\201710120143589_CahsRegisterRelationStore.Designer.cs">
-      <DependentUpon>201710120143589_CahsRegisterRelationStore.cs</DependentUpon>
+    <Compile Include="Migrations\201710260308567_InitialModel.cs" />
+    <Compile Include="Migrations\201710260308567_InitialModel.Designer.cs">
+      <DependentUpon>201710260308567_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Brand.cs" />
@@ -110,19 +99,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709210040218_init.resx">
-      <DependentUpon>201709210040218_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709210207026_FirstDataBase.resx">
-      <DependentUpon>201709210207026_FirstDataBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710110232116_RoleNames.resx">
-      <DependentUpon>201710110232116_RoleNames.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710120143589_CahsRegisterRelationStore.resx">
-      <DependentUpon>201710120143589_CahsRegisterRelationStore.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710260308567_InitialModel.resx">
+      <DependentUpon>201710260308567_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

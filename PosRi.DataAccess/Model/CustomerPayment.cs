@@ -17,11 +17,11 @@ namespace PosRi.DataAccess.Model
 
         public int CustomerDebtId { get; set; }
         [ForeignKey("CustomerDebtId")]
-        public virtual CustomerDebt CustomerDebt { get; set; }
+        public CustomerDebt CustomerDebt { get; set; }
 
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public virtual User User { get; set; }
+        public User User { get; set; }
 
     }
 }

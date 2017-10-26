@@ -7,13 +7,13 @@ namespace PosRi.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class RoleNamesMigration : IMigrationMetadata
+    public sealed partial class InitialModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RoleNamesMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201710110232116_RoleNames"; }
+            get { return "201710260308567_InitialModel"; }
         }
         
         string IMigrationMetadata.Source

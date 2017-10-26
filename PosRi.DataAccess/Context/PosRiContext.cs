@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.Entity;
+﻿using MySql.Data.Entity;
 using PosRi.DataAccess.Model;
+using System.Data.Entity;
 
 namespace PosRi.DataAccess.Context
 {
@@ -48,8 +43,8 @@ namespace PosRi.DataAccess.Context
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<User>()
-                .HasMany<Role>(u => u.Roles)
-                .WithMany()
+                .HasMany(u => u.Roles)
+                .WithMany(r => r.Users)
                 .Map(ur =>
                 {
                     ur.MapLeftKey("UserId");
@@ -58,8 +53,8 @@ namespace PosRi.DataAccess.Context
                 });
 
             modelBuilder.Entity<Vendor>()
-                .HasMany<Brand>(u => u.Brands)
-                .WithMany()
+                .HasMany(u => u.Brands)
+                .WithMany(brand => brand.Vendors)
                 .Map(ur =>
                 {
                     ur.MapLeftKey("VendorId");
